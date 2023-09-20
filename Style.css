@@ -1,0 +1,1295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins&family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+span{
+    font-size: .9rem;
+    color: rgb(128, 126, 126);
+}
+
+ 
+
+
+
+
+
+
+
+
+/*----------- Navigation Bar-----------*/
+
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 1vw 5vw;
+    z-index: 999;
+}
+
+
+nav img{
+    width: 350px;
+    cursor: pointer;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav .navigation ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+nav .navigation ul li a.active,
+
+nav .navigation ul li a:hover{
+    color: goldenrod;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/*----------- Home-----------*/
+
+
+#home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)), url(https://res.cloudinary.com/highereducation/image/upload/w_740,h_416,c_fill,f_auto,fl_lossy,q_auto/v1/TheBestSchools.org/vassar-college-thompson-memorial-library.jpg);
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    
+}
+
+#home p{
+    width: 50%;
+    color: white;
+    font-size: .9rem;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 17px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#home a.blue{
+    color: white;
+    background-color: blue;
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    color: blue;
+    background-color: white;
+}
+
+#home a.yellow{
+    color: white;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover{
+    color: blue;
+    background-color: white;
+}
+
+
+
+
+
+/*----------Features-----------*/
+
+#features{
+    text-align: center;
+    padding: 5vw 8vw 3vw 8vw;
+}
+
+#features h1{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+    background-color: wheat;
+    text-align: start;
+    padding: 0 0px 10px 10px;
+}
+
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: blue;
+}
+
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+
+
+
+
+/*-----------  Courses  Section-----------*/
+
+
+#course{
+    text-align: center;
+    padding: 5vw 8vw 3vw 8vw;
+}
+
+#course h1{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+}
+
+#course .courses{
+    text-align: start;
+    background-color: white;
+    height: 100%;
+    position: relative;
+}
+
+#course .courses img{
+    width: 100%;
+    height: 59%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i{
+    color:yellow;
+    font-size: .9rem;
+}
+
+#course .courses .cost{
+    background-color: rgb(105, 105, 206);
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+
+}
+
+
+
+/*----------- Resistration form -----------*/
+
+
+#resistration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url(https://media.istockphoto.com/id/1248263998/photo/isolated-high-tech-open-laptop-with-abstract-vibrant-color-screen-on-a-dark-background.jpg?s=612x612&w=0&k=20&c=_kn4qt0zDFZ6HuYgyKEzlXqhCPVkPk2thngK_MW-OPo=);
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resistration .reminder{
+    color: white;
+
+}
+
+#resistration .reminder h1{
+    color: white;
+}
+
+#resistration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+
+}
+
+#resistration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+#resistration .form{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#resistration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+
+}
+
+#resistration .form .btn{
+    margin-top: 20px;
+}
+
+
+#resistration .form a.yellow{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 17px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+
+#resistration .form a.yellow:hover{
+    color: blue;
+    background-color: white;
+}
+
+
+
+
+/*-----------Profile -----------*/
+
+
+#experts{
+    padding: 5vw 8vw 6vw 8vw;
+    text-align: center;
+}
+
+#experts h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+#experts .expert-box img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 3px rgba(31, 38, 135, 0.37);
+}
+
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+}
+
+#experts .expert-box .profile{
+    background-color: rgb(240, 239, 239);
+    padding: 30px 10px;
+}
+
+
+
+.pro-links{
+    margin-top: 10px;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(31, 38, 135, 0.37);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+
+
+/*-----------Footer -----------*/
+
+footer{
+    padding: 8vw;
+    background-color: rgb(17, 15, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+footer.footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: rgb(90, 88, 88);
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+
+footer p{
+    color: rgb(90, 88, 88); 
+     
+}
+
+footer .subscriber{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background-color: rgb(127, 150, 199);
+    color: white;
+    outline: none;
+}
+
+footer .subscriber a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 15px 15px;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+footer .subscriber a.yellow{
+    color: white;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+
+footer .subscriber a.yellow:hover{
+    color: rgb(116, 121, 133);
+    background-color: white;
+}
+
+footer .copyright{ 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+footer .copyright p{
+    color: white;
+}
+
+footer .copyright .pro-links{
+    margin-top: 0px;
+}
+
+footer .copyright .pro-links i{
+   background-color: rgb(116, 121, 133);
+   color: white;
+}
+
+footer .copyright .pro-links i:hover{
+    background-color: blue;
+    color: rgb(116, 121, 133);
+}
+
+
+
+
+/*-----------------------About file is running here ------------------------*/
+
+
+
+
+#about-home{
+        background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)), url(https://images.unsplash.com/photo-1602536422218-2009cae49eaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIweW9yayUyMHVuaXZlcnNpdHl8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        background-position:top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    #about-home h2{
+        color:white;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    #about-container{
+        display: flex;
+        align-items: center;
+        padding: 8vw 8vw 2vw 8vw;
+    }
+
+    #about-container .about-image{
+        width: 60%;
+        padding-right: 60px;
+        
+    }
+
+    #about-container .about-image img{
+        width: 100%;
+    }
+
+    #about-container .about-text{
+        width: 50%;
+    }
+
+    #about-container .about-text h2{
+        color: rgb(54, 53, 53);
+        padding-bottom: 15px;
+        font-weight: 900;
+    }
+
+    #about-container .about-text p{
+        color: rgb(136, 134, 134);
+        font-weight: 300;
+    }
+
+    #about-container .about-text .about-fe{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    #about-container .about-text .about-fe img{
+        width: 80px;
+        background-size: cover;
+        background-position: center;
+        margin-right: 20px;
+    }
+
+    #about-container .about-text .about-fe .fe-text{
+        width: 90%;
+    }
+
+    #about-container .about-text .about-fe .fe-text h5{
+        font-size: 16px;
+        color:rgb(54, 53, 53) ;
+    }
+
+
+    #trust{
+        text-align: center;
+        padding: 8vw;
+    }
+
+    #trust .trust-img {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #trust .trust-img img{
+        width: 90px;
+        height: auto;
+    }
+
+
+
+
+    /*--------------------Blog file is running here---------------------  */
+
+
+    #blog-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 8vw;
+    }
+
+    #blog-container .blogs {
+        width: 60%;
+    }
+
+    #blog-container .blogs img{
+        width: 100%;
+        border-radius: 19px;
+    }
+
+    #blog-container .blogs .post{
+        padding-bottom: 60px;
+
+    }
+
+    #blog-container .blogs .post h3{
+        color: rgb(54, 53, 53);
+        padding: 15px 0 10px 0;
+    }
+
+    #blog-container .blogs .post p{
+        color: rgb(121, 119, 119);
+        padding-bottom: 20px;
+    }
+
+    #blog-container .blogs .post a{
+        
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 13px 35px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    #blog-container .cate {
+        width: 30%;
+    }
+
+    #blog-container .cate h2{
+        padding-bottom: 7px;
+    }
+
+    #blog-container .cate a{
+        text-decoration: none;
+        color: rgb(121, 119, 119);
+        font-weight: 500;
+        line-height: 45px;
+    }
+
+
+    /*---------------- Blog-Post file is running here------------ */
+
+    #blog-container .blogpost{
+         width: 60%;
+         margin: 0 auto;
+    }
+
+    #blog-container .blogpost p{
+        text-align: justify;
+        padding-bottom: 60px !important;
+   }
+
+
+       /*---------------- Course-inner file is running here------------ */
+
+
+
+#course-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+
+#course-inner h3{
+    padding: 30px 0 25px 0;
+    color:rgb(61, 56, 56) ;
+}
+
+#course-inner p{
+    color:rgb(99, 91, 91) ;
+}
+
+#course-inner hr{
+    height: 1px;
+    margin-top: 40px;
+    background-color:rgb(61, 56, 56) ;
+}
+
+#course-inner .overview{
+    width: 70%;
+}
+
+#course-inner .overview .course-img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#course-inner .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#course-inner .overview .course-head .c-name{
+    width: 70%;
+}
+
+#course-inner .overview .course-head .c-name   h2{
+    color: rgb(56, 53, 53);
+}
+
+#course-inner .overview .course-head .c-name   p{
+    font-size: 15px;
+}
+
+#course-inner .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+
+#course-inner .overview .course-head .c-name .star i{
+    color: goldenrod;
+    font-size: 0.9rem;
+}
+
+#course-inner .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: blue;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgb(191, 191, 206);
+}
+
+#course-inner .learn p {
+    font-size: 15px;
+    padding-bottom: 15px;   
+}
+
+#course-inner .learn p i{
+    color: blue;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+#course-inner .tutor{
+    display: flex;
+}
+#course-inner .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-inner .tutor h5{
+    font-size: 15px;
+}
+
+
+#course-inner .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 40px 0 rgb(11, 2, 55 , 15%) ;
+}
+
+#course-inner .enroll h3{
+    padding-bottom: 10px;
+}
+
+#course-inner .enroll p{
+    font-size: 15px;
+    color: rgb(119, 119, 126);
+    margin: 15px 0;
+}
+
+#course-inner .enroll p i{
+    color: rgb(88, 88, 224);
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+#course-inner .enroll .enroll-btn{
+    padding: 25px 0 20px 0;
+    margin: auto;
+    text-align: center;
+}
+
+#course-inner .enroll .enroll-btn a{
+    text-decoration: none;
+    font-size: .8rem;
+    padding: 13px 45px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(60, 60, 212);
+}
+
+
+/*----------------Contact File is running here----------------- */
+
+#contact{
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#contact .get-in{
+   width: 350px;
+    
+}
+#contact .get-in h2{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: .8px;
+    margin-bottom: 16px;
+    color: rgb(45, 45, 48);
+}
+
+
+#contact .get-in p{
+    color: rgb(45, 45, 48);
+    line-height: 24px;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgb(189, 184, 184);
+}
+
+#contact .get-in h3{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: rgb(28, 28, 29);
+}
+
+#contact .get-in .get-in-details div{
+    display: flex;
+}
+
+#contact .get-in .get-in-details div .get{
+    font-size: 16px;
+    line-height: 22px;
+    color: blue;
+    margin-right: 22px;
+}
+
+#contact .get-in .get-in-details div p{
+    font-size: 14px;
+    border-bottom: none;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+#contact .get-in .get-in-details .pro-links i{
+    margin-right: 8px;
+}
+
+#contact .form{
+    width: 60%;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#contact .form h4{
+    font-size: 24px;
+    color: rgb(45, 45, 48);
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+#contact .form p{
+    color: rgb(111, 111, 117);
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+
+#contact .form .form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact .form .form-row input{
+    width: 48%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    color: rgb(8, 8, 8);
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form .form-col input{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    color: rgb(8, 8, 8);
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form .form-col input,
+#contact .form .form-col textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    color: rgb(8, 8, 8);
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form button{
+    font-size: 0.9rem;
+    padding: 13px 25px;
+    background-color: rgb(2, 2, 46);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+#map{
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 8vw;
+}
+
+#map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+                                        /*-----------Media Query -----------*/
+
+
+
+/*-------Home-------  */
+
+
+@media screen and (max-width: 769px){
+    nav {
+       padding: 15px 20px;
+    }
+    nav img{
+        width: 150px;
+        cursor: pointer;
+    }
+
+    #menu-btn{
+        width: 30px;
+        height: 30px;
+        display:initial;
+    }
+    
+    #menu-close{
+        display: initial;
+        color: white;
+        font-size: 1.6rem;
+        padding: 30px 0 20px 20px;
+    }
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background-color: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.3s ease;
+    }
+
+    nav .navigation ul .active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: white;
+    }
+
+    #home  {
+        padding-top: 0px;
+    }
+
+    #home p {
+        width: 90%;
+    }
+
+    #features {
+        padding: 8vw 4vw 0vw 4vw;
+    }
+    #course {
+        padding: 8vw 4vw 0vw 4vw;
+    }
+    #resistration {
+        padding: 6vw 4vw 6vw 4vw;
+    }
+    #resistration .reminder .time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    #experts {
+        padding: 5vw 8vw 4vw 8vw;
+        text-align: center;
+    }
+    footer .copyright .pro-links{
+        margin-top: 15px;
+    }
+
+
+           /*-------About-------  */
+
+
+#about-container {
+	padding: 8vw 4vw 2vw 4vw;
+}
+
+#about-container .about-image {
+	padding: 20px;
+}
+
+#trust .trust-img img {
+	width: 50px;
+	height: auto;
+}
+
+/*-------Blog-------  */
+
+#blog-container {
+	
+	padding: 8vw 3vw;
+}
+
+/*--------------------Post--------------- */
+
+#blog-container .blogpost {
+	width: 100%;
+    margin-top: 30px;
+}
+
+#blog-container .blogspost img {
+	width: 100%;
+    height: 50vh;
+	object-fit: cover;
+}
+
+
+/*-------Course---------------*/
+
+#course-inner {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 8vw 4vw;
+}
+
+#course-inner .overview {
+    width: 100%; 
+}
+
+#course-inner .enroll {
+	margin-top: 25px;
+}
+
+
+/*-------Contact---------------*/
+
+#contact {
+	padding: 8vw 3vw;
+}
+
+#contact .get-in{
+    width: 250px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 475px){
+    #resistration{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #resistration .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+               /*-------About-------  */
+
+    #about-container {
+        flex-direction: column-reverse;
+    }
+
+    #about-container .about-image {
+        width: 100%;
+    }
+    #about-container .about-text {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    #trust .trust-img {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #trust .trust-img img{
+        width: 60px;
+        margin: 10px 15px;
+        height: auto;
+    }
+
+    footer .subscriber {
+        display: flex;
+        flex-direction: row;
+    }
+   
+
+                  /*-------Blog-------  */ 
+
+    #blog-container {
+        flex-direction: column;
+     }
+
+     #blog-container .blogs {
+        width: 100%;
+     }
+
+     #blog-container .cate {
+        width: 100%;
+     }
+
+
+     #blog-container .blogpost {
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    #blog-container .blogspost img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+
+    /*----------Course------------ */ 
+
+    #course-inner .overview .course-head .c-name {
+        width: 50%;
+    }
+
+    #course-inner .overview .course-head .c-name h2 {
+        font-size: 22px;
+    }
+
+    #course-inner .overview .course-head span {
+        font-size: 22px;
+    }
+    #course-inner .enroll {
+        width: 100%;
+    }
+
+    /*-------Contact---------------*/
+
+    #contact{
+        padding: 8vw 4vw;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    #contact .get-in{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact .form{
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    #contact .form .form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    #contact .form .form-row input{
+        width: 100%;
+    }
+
+    
+}
