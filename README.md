@@ -1,1 +1,1 @@
-# Educational-School-Website
+Responsive Educational-School-Website
